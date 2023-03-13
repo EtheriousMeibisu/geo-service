@@ -12,6 +12,7 @@ public class GeoServiceImpl implements GeoService {
     /**
      * Метод определяет локацию по ip
      */
+
     public Location byIp(String ip) {
         if (LOCALHOST.equals(ip)) {
             return new Location(null, null, null, 0);
@@ -31,6 +32,7 @@ public class GeoServiceImpl implements GeoService {
      * Метод определяет локацию по координатам
      */
     public Location byCoordinates(double latitude, double longitude) {
+
         throw new RuntimeException("Not implemented");
     }
 }
